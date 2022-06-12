@@ -1,0 +1,86 @@
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.app{
+  background-color: rgb(5, 5, 5);
+  height: 100vh;
+}
+.header-block{
+  display: flex;
+  justify-content: space-between;
+  &__title{
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    color: turquoise;
+  }
+}
+.currency-online{
+  &__title{
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+    color: #fff;
+  }
+  &__ccys{
+    display: flex;
+    width: 250px;
+  }
+  &__ccy{
+    margin-right: 15px; 
+  }
+  &__name-ccy{
+    font-size: 20px;
+    color: turquoise;
+    font-weight: 600;
+  }
+  &__buy-ccy{
+    font-size: 20px;
+    color: #fff;
+  }
+  &__sale-ccy{
+    font-size: 20px;
+    color: #fff;
+  }
+
+}
+.converter{
+  &__title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 75px;
+    color: #fff;
+    padding: 15px 0;
+    border: 2px solid turquoise;
+  }
+  &__inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__form{
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  &__input{
+    width: 73%;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(5, 5, 5);
+    border: 2px solid turquoise;
+    margin-right: 15px;
+  }
+  &__select{
+    height: 34px;
+  }
+  &__option{
+    height: 34px;
+    width: 100px;
+  }
+}
