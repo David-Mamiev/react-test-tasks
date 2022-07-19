@@ -1,0 +1,211 @@
+.vin-decoder {
+  margin: 76px auto 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__text-block {
+    border: 5px solid rgb(99, 27, 146);
+    padding: 5px 25px;
+  }
+  &__title {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: rgb(99, 27, 146);
+  }
+  &__paragraph {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 600;
+    text-align: left;
+  }
+  &__form {
+    display: flex;
+  }
+  &__input {
+    width: 70%;
+    padding: 10px 10px;
+    height: 30px;
+    font-size: 23px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  &__button {
+    width: 74px;
+    font-size: 19px;
+    background-color: rgb(35, 170, 30);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: -5px;
+    cursor: pointer;
+  }
+  &__error {
+    font-size: 17px;
+    color: red;
+    margin: 10px 0 0 -20px;
+  }
+}
+.list-values {
+  list-style: none;
+  padding-left: 0;
+  width: 66%;
+  display: inline-block;
+  &-block {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    max-width: 1100px;
+  }
+  &__li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    line-height: 28px;
+    padding: 5px 2px;
+    border-top: 2px solid rgb(92, 88, 88);
+    margin-bottom: 4px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__variable {
+    color: rgb(99, 27, 146);
+    font-weight: 500;
+    text-align: left;
+  }
+  &__value {
+    text-align: right;
+  }
+}
+.last-vins-block {
+  margin: 0 30px 0 40px;
+  float: right;
+  &__title {
+    margin: 20px auto 20px auto;
+    font-size: 19px;
+  }
+}
+.last-vins-list {
+  list-style: none;
+  padding-left: 0;
+  &__li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(99, 27, 146);
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer;
+  }
+  &__link {
+    font-weight: 500;
+    border-bottom: 2px solid rgb(99, 27, 146);
+  }
+}
+@media (max-width: 1100px) {
+  .vin-decoder {
+    max-width: 860px;
+    margin: 40px auto 0 auto;
+    padding: 0 13px;
+    &__input {
+      width: 65%;
+    }
+    &__error {
+      margin-left: -25px;
+    }
+    &__title {
+      font-size: 25px;
+      margin: 10px 0;
+    }
+    &__paragraph {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+  .last-vins-block {
+    margin: 0 20px 0 37px;
+  }
+  .last-vins-list {
+    &__li {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+  }
+  .list-values {
+    max-width: 900px;
+    margin-top: 28px;
+    width: 100%;
+    &-block{
+      width: 95%;
+      max-width: 900px;
+      display: flex;
+    }
+    &__li {
+      font-size: 19px;
+    }
+  }
+  .not-found{
+    font-size: 28px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .vin-decoder {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    padding: 0 13px;
+    flex-direction: column-reverse;
+    align-items: center;
+    &__text-block{
+      margin-bottom: 20px;
+    }
+    &__input {
+      height: 25px;
+      font-size: 17px;
+    }
+    &__button{
+      font-size: 17px;
+    }
+    &__error {
+      margin-left: -10px;
+      font-size: 15px;
+    }
+    &__title {
+      font-size: 23px;
+      margin: 10px 0;
+    }
+    &__paragraph {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+  .last-vins-block {
+    margin: 0;
+    float: none;
+    &__title{
+      font-size: 17px;
+    }
+  }
+  .last-vins-list__li{
+    margin-bottom: 5px;
+  }
+  .list-values {
+    width: 98%;
+    max-width: 600px;
+    margin-top: 10px;
+    &-block{
+      flex-direction: column;
+      max-width: 530px;
+    }
+    &__li {
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &__value{
+      font-size: 15px;
+    }
+  }
+  .not-found{
+    width: 95%;
+    margin: 40px auto;
+    font-size: 24px;
+  }
+}

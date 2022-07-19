@@ -1,0 +1,94 @@
+.variable-page {
+  &__title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin: 50px auto 0px auto;
+  }
+  &__description {
+    font-size: 20px;
+  }
+}
+.variables-list {
+  margin: 70px auto 0 auto;
+  list-style: none;
+  padding-left: 0;
+  &__li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid rgb(95, 20, 180);
+    & ul {
+      list-style: disc;
+    }
+  }
+  &__name {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 22px;
+    color: rgb(134, 70, 207);
+  }
+  &__description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .variable-page {
+    &__title {
+      font-size: 30px;
+      margin-top: 40px;
+    }
+    &__description {
+      font-size: 17px;
+    }
+  }
+  .variables-list {
+    margin-top: 50px;
+    max-width: 900px;
+    &__li {
+      margin-bottom: 15px;
+      & p {
+        font-size: 15px;
+        margin: 10px auto;
+      }
+    }
+    &__name {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .variable-page {
+    &__title {
+      font-size: 25px;
+      margin-top: 30px;
+    }
+    &__description {
+      font-size: 14px;
+      max-width: 514px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .variables-list {
+    margin-top: 30px;
+    width: 97%;
+    max-width: 500px;
+    &__li {
+      margin-bottom: 12px;
+      & p {
+        font-size: 12px;
+        margin: 10px auto;
+      }
+      & ul{
+        padding-left: 10px;
+        & li{
+            font-size: 12px;
+        }
+      }
+    }
+    &__name {
+      font-size: 18px;
+    }
+  }
+}
