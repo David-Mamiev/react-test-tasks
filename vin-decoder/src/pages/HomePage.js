@@ -4,14 +4,16 @@ import { useState } from "react";
 import { LastVinsMap } from "../components/HomePage/LastVinsMap";
 import { ListVinValues } from "../components/HomePage/ListVinValues";
 
-const arrLastVinCodes = [
+const arrLastVinCodesLocalStorage = [
     "5YJSA1E41GF167245", "3GCEC13077G518983", "1GTEK14VX2Z233782",
     "W1K1770871V113132", "ZDM13BSW3FB020883", "1FTFW1CT5DFC10312",
 ];
+localStorage.setItem("arr", JSON.stringify(arrLastVinCodesLocalStorage));
+const arrLastVinCodes = localStorage.getItem("arr");
 
 export function HomePage() {
     const checkSpecCharacters = (value) => (value.toString().match(/\W/) ? true : false);
-    const [lastVinCodes, setLastVinCodes] = useState(arrLastVinCodes);
+    const [lastVinCodes, setLastVinCodes] = useState(JSON.parse(arrLastVinCodes));
     const [arrValues, setArrValues] = useState([]);
     const validateArrValues = [];
     const validateVinValue = (value) => {

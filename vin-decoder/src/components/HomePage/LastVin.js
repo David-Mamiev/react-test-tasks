@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+
 export function LastVin({ vinCode, setArrValues }) {
     const validateArrValues = [];
     const validateVinValue = (value) => {
@@ -9,6 +11,7 @@ export function LastVin({ vinCode, setArrValues }) {
         fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vinCode}?format=json`)
             .then((res) => res.json())
             .then((data) => {
+                // console.log(validateArrValues);
                 data.Results.map((item) => validateVinValue(item));
                 setArrValues(validateArrValues);
             });
